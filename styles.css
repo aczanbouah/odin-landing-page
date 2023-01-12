@@ -7,15 +7,20 @@ a {
     color: unset;
 }
 
-.header, .hero-container {
+.header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: #1f2937;
-    padding: 0px 200px;
+    padding: 0px 300px;
     /* position: fixed;
     width: 100%;
     top: 0; */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo h1{
@@ -32,19 +37,47 @@ a {
 }
 
 .hero-container {
-    height: 400px;
-    width: auto;
+    display: flex;
+    padding: 32px 0;
 }
 
 .hero-left-container {
-    width: 50%;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .hero-right-container {
-    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.hero-right-container img {
-    height: auto;
+.hero-left-container h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+    margin: 0px;
+}
+
+.hero-right-container img{
+    height: 100%;
     width: 300px;
+}
+
+.hero-left-container p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0px;
+}
+
+.hero-left-container button {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 32px;
+    color: #e5e7eb;
+    font-weight: 700;
 }
