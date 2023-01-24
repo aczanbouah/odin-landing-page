@@ -1,28 +1,31 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto",sans-serif
 }
 
 a {
     text-decoration: none;
-    color: unset;
+    color: unset
 }
 
-.header, .footer {
-    display: flex;
+.header {
+    display: flex
+}
+
+.footer,.header {
     flex-direction: column;
     background-color: #1f2937;
-    padding: 0px 300px;
+    padding: 0 300px
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 
-.header-logo h1{
+.header-logo h1 {
     font-size: 24px;
-    color: #f9faf8;
+    color: #f9faf8
 }
 
 .nav-links {
@@ -30,13 +33,20 @@ a {
     list-style-type: none;
     gap: 18px;
     font-size: 18px;
-    color: #e5e7eb;
+    color: #e5e7eb
 }
 
-.hero-container, .info-container, .quote-container, .cta-container {
+.hero-container {
+    background-color: #1f2937
+}
+
+.hero-container,.info-container,.quote-container {
     display: flex;
-    background-color: #1f2937;
-    padding: 72px 300px;
+    padding: 72px 300px
+}
+
+.cta-container {
+    padding: 72px 300px
 }
 
 .hero-left-container {
@@ -44,148 +54,147 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .hero-right-container {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end
 }
 
 .hero-left-container h2 {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
-    margin: 0px;
+    margin: 0
 }
 
-.hero-right-container img{
+.hero-right-container img {
     height: 100%;
-    width: 300px;
+    width: 300px
 }
 
 .hero-left-container p {
     font-size: 18px;
     color: #e5e7eb;
-    margin: 0px;
+    margin: 0
 }
 
-.hero-left-container button, .cta-container button {
+.cta-container button,.hero-left-container button {
     background-color: #3882f6;
-    border: none;
+    border: 0;
     border-radius: 8px;
     padding: 8px 32px;
     color: #e5e7eb;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .info-container {
     background-color: #f9faf8;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column
+}
+
+.quote blockquote,h2 {
+    font-size: 36px;
+    color: #1f2937
 }
 
 h2 {
-    font-size: 36px;
     font-weight: 800;
-    color: #1f2937;
-    margin-top: 0px;
-    margin-bottom: 72px;
+    margin-top: 0;
+    margin-bottom: 72px
 }
 
 .info-box-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
 .info-box-container div {
-    display: flex;
-    flex-direction: column;
     flex-basis: 150px;
     justify-content: space-around;
-    align-items: center;
+    align-items: center
 }
 
 .info-box-container img {
     height: auto;
     width: 150px;
     border: 3px solid #3882f6;
-    border-radius: 15px;
+    border-radius: 15px
 }
 
 .info-box-container p {
-    text-align: center;
+    text-align: center
 }
 
 .quote-container {
     background-color: #e5e7eb;
-    justify-content: center;
+    justify-content: center
 }
 
-.quote {
+.info-box-container div,.quote {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .quote blockquote {
-    font-size: 36px;
     font-weight: 300;
-    font-style: italic;
-    color: #1f2937;
+    font-style: italic
 }
 
 .quote figcaption {
     align-self: flex-end;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 18px
 }
 
 .cta-container {
     background-color: #f9faf8;
     display: flex;
-    justify-content: center;
+    justify-content: center
+}
+
+.footer,div.cta-info-box {
+    display: flex;
+    align-items: center
 }
 
 div.cta-info-box {
     background-color: #3882f6;
-    border-radius: 8px;;
-    display: flex;
-    align-items: center;
+    border-radius: 8px;
     justify-content: space-evenly;
     flex-grow: 1;
-    padding: 54px 0px;
+    padding: 54px 0;
     margin-top: 36px;
-    margin-bottom: 36px;
+    margin-bottom: 36px
 }
 
 button.cta-button {
-    border: 1px solid #f9faf8;
+    border: 1px solid #f9faf8
 }
 
-.cta-text-box p {
+.cta-text-box p,.footer p {
     color: #e5e7eb;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 18px
+}
+
+.cta-text-box h3,.cta-text-box p {
+    margin-top: 0;
+    margin-bottom: 0
 }
 
 .cta-text-box h3 {
     color: #e5e7eb;
-    font-size: 24px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-size: 24px
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center
 }
 
 .footer p {
-    color: #e5e7eb;
-    font-size: 18px;
-    padding: 24px 0px;
+    padding: 24px 0
 }
