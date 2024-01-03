@@ -33,3 +33,20 @@ a {
   text-decoration: none;
   color: #f9faf8;
 }
+
+.hero-img {
+  height: auto;
+  width: 300px;
+}
+
+.hero-container {
+  display: flex;
+  background-color: #1f2937;
+  flex-direction: row;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
