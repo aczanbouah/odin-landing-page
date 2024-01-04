@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -24,9 +24,14 @@ button {
   padding: 0 15%;
 }
 
-.header {
+.header,
+.cta-header {
   font-size: 24px;
   color: #f9faf8;
+}
+
+.cta-header {
+  margin: 0;
 }
 
 ul {
@@ -70,7 +75,8 @@ a {
   margin: 0;
 }
 
-.hero-subtext {
+.hero-subtext,
+.cta-text {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -136,4 +142,45 @@ blockquote > footer,
 cite {
   font-size: 24px;
   font-weight: 700;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15%;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-wrapper {
+  display: flex;
+  background-color: #3882f6;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 15%;
+  border-radius: 8px;
+}
+
+.cta-btn {
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #f9faf8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  font-size: 18px;
 }
