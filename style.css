@@ -60,7 +60,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  width: 35%;
 }
 
 .hero-text {
@@ -82,4 +82,37 @@ a {
   border-radius: 8px;
   font-size: 18px;
   font-weight: 700;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 0;
+}
+
+.cards-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.cards-container {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.placeholder {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #3882f6;
+  border-radius: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
